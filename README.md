@@ -1,2 +1,0 @@
-# modals
-Created with CodeSandbox
