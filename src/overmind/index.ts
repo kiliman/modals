@@ -6,7 +6,7 @@ import { state } from './state'
 import * as actions from './actions'
 import * as modals from './modals'
 
-const config = merge(
+export const config = merge(
   {
     state,
     actions,
@@ -21,5 +21,4 @@ declare module 'overmind' {
   interface Config extends IConfig<typeof config> {}
 }
 
-export const overmind = createOvermind(config)
 export const useOvermind = createHook<typeof config>()
